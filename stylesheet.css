@@ -969,7 +969,9 @@ audio {
 }
 
 .bannar {
+	margin-top : -20px;
 	max-width: 100%;
+	height: 120px;
 	-webkit-transform:translate(0px,-500px);
 	-moz-transform:translate(0px,-500px);
 	-o-transform:translate(0px,-500px);
@@ -1056,7 +1058,7 @@ audio {
 	100% {
 		-ms-transform:translate(0px,0px);
 	}
-}o
+}
 @keyframes bannar_come {
 	0%{
 		transform:translate(0px,-1000px);
@@ -1077,42 +1079,101 @@ audio {
 
 .balloons {
 	position: fixed;
-	bottom: -200px;
-	opacity: 0.6;
-	z-index: 99;
-	width: 100px;
-	height: 183px;
-	background-repeat: no-repeat no-repeat;
-	background-size: 100px 183px;
+    bottom: -200px;
+    opacity: 0.6;
+    z-index: 99;
+    width: 50px;
+    height: 90px;
+    background-repeat: no-repeat no-repeat;
+    background-size: 50px 90px;
 }
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 50px;
+	font-size: 20px;
 	color: #BF4136;
 	text-shadow: 5px 5px 5px #FFF;
 	display: none;
 }
+/* F */
 #b1,#b11 {
-	background-image: url('b1.png');
-}
+	background-image: url('b1.png'); 
+} 
+/* I */
 #b2,#b22 {
 	background-image: url('b2.png');
 }
+/* T */
 #b3,#b33 {
 	background-image: url('b3.png');
 }
+/* R */
 #b4,#b44{
 	background-image: url('b4.png');
 }
+/* I */
 #b5,#b55{
 	background-image: url('b5.png');
 }
+/* A */
 #b6,#b66{
 	background-image: url('b6.png');
 }
+/* E */
 #b7,#b77{
 	background-image: url('b7.png');
+}
+/* L */
+#b8,#b88 {
+	background-image: url('b6.png');
+}
+/* L */
+#b9,#b99 {
+	background-image: url('b5.png');
+}
+/* I */
+#b10,#b1010 {
+	background-image: url('b4.png');
+}
+/* A */
+#b20,#b2020{
+	background-image: url('b3.png');
+}
+/* N */
+#b30,#b3030{
+	background-image: url('b2.png');
+}
+/* A */
+#b40,#b4040{
+	background-image: url('b1.png');
+}
+/* G */
+#b50,#b5050{
+	background-image: url('b2.png');
+}
+/* A */
+#b60,#b6060 {
+	background-image: url('b3.png');
+}
+/* Y */
+#b70,#b7070 {
+	background-image: url('b4.png');
+}
+/* A */
+#b80,#b8080 {
+	background-image: url('b5.png');
+}
+/* T */
+#b90,#b9090{
+	background-image: url('b6.png');
+}
+/* R */
+#b100,#b100100{
+	background-image: url('b7.png');
+}
+/* I */
+#b200,#b200200{
+	background-image: url('b5.png');
 }
 .balloons-rotate-behaviour-one {
 	-webkit-animation: balloons_rotate_one linear 10s infinite;
@@ -1254,6 +1315,33 @@ audio {
 	top:100%;
 	opacity: 0.5;
 	z-index: 9999;
+}
+.sayangko-1{
+	position: fixed;
+	top:100%;
+	left:50%;
+	/* opacity: 0.5; */
+	z-index: 9999;
+	width: 100%;
+	max-width: 100px;
+}
+.sayangko-2{
+	position: fixed;
+	top:100%;
+	
+	/* opacity: 0.5; */
+	z-index: 9999;
+	width: 100%;
+	max-width: 100px;
+}
+.sayangko-3{
+	position: fixed;
+	top:100%;
+	left: 100%;
+	/* opacity: 0.5; */
+	z-index: 9999;
+	width: 100%;
+	max-width: 100px;
 }
 .control-panel {
 	position: fixed;

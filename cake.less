@@ -14,7 +14,7 @@
 .cake{
   position:absolute;
   display:none;
- // top:30%; 
+ top:30%; 
   left:50%;
   margin-left:-(@D/2);
   width:@D; height:@D;
@@ -28,7 +28,7 @@
   border-radius:@D;
   content:"";
   position:absolute;
-  bottom:0; left:0;
+  bottom:0; left:0; top: 116%;
   width:@D; height:@D/50;
 }
 
@@ -39,29 +39,61 @@
 /* ============================================== Candle
 */
 
-.velas{
-  background:rgba(255,255,255,1);
-  border-radius:100%;
-  position:absolute;
-  top:50%; left:50%;
-  margin-left:-(@D/2)/20;
-  margin-top:-(@D/2)/6;
-  width:@D/20; height:@D/6;
+.velas1{
+  background: url(http://127.0.0.1:8081/c2.png);
+  border-radius: 100%;
+  position: absolute;
+  top: 66%;
+  left: 40%;
+  margin-left: -7.5px;
+  margin-top: -25px;
+  width: 41px;
+  height: 50px;
+  background-size: 41px 41px;
 }
 
-.velas:after,
-.velas:before{
-  background:rgba(255,0,0,0.4);
+.velas1:after,
+.velas1:before{
+  background:url('c2.png');
   content:"";
   position:absolute;
   width:100%; height:@D/45;
 }
 
-.velas:after{
+.velas1:after{
   top:25%; left:0;
 }
 
-.velas:before{
+.velas1:before{
+  top:45%; left:0;
+}
+
+.velas2{
+  background: url(c4.png);
+  border-radius: 100%;
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  margin-left: -7.5px;
+  margin-top: -25px;
+  width: 41px;
+  height: 50px;
+  background-size: 41px 41px;
+}
+
+.velas2:after,
+.velas2:before{
+  background:url('c4.png');
+  content:"";
+  position:absolute;
+  width:100%; height:@D/45;
+}
+
+.velas2:after{
+  top:25%; left:0;
+}
+
+.velas2:before{
   top:45%; left:0;
 }
 
@@ -73,7 +105,7 @@
   border-radius:100%;
   box-shadow:0 0 40px 10px rgba(248,233,209,0.2);
   position:absolute;
-  top:-12px; left:50%;
+  top:-44px; left:50%;
   margin-left:-(@D/2)/15;
   //margin-top:-(@D/2)/10;
   width:@D/15; height:@D/8;
@@ -203,7 +235,7 @@
   background:rgba(236,231,227,1);
   border-radius:@D/2;
   position:absolute;
-  top:60%; left:50%;
+  top: 76%; left:50%;
   margin-left:-(@D/2)/1.8;
   margin-top:-(@D/2)/10;
   width:@D/1.8; height:@D/8;
@@ -234,6 +266,7 @@
   background:rgba(109,56,38,1);
   position:absolute;
   bottom:0; left:50%;
+  top: 82%;
   margin-left:-(@D/2)/2;
   width:@D/2; height:@D/3;
 }
