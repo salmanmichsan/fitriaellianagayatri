@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="loading.css">
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
 	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
@@ -35,6 +36,7 @@
         <source src="hbd.mp3"></source>
 	   Your browser isn't invited for super fun audio time.
     </audio>
+	
     <div class="balloons text-center" id="b1">
     	<h2 style="color:#F2B300;">F</h2>
     </div>
@@ -98,9 +100,28 @@
     </div>
     <img src="Balloon-Border.png" width="100%" class="balloon-border">
 	
-	<img src="s2.PNG" class="sayangko-2">
-	<img src="s1.PNG" class="sayangko-1">
-	<img src="s3.PNG" class="sayangko-3">
+	<img src="s2.PNG" class="sayangko sayangko-2">
+	<img src="start1.PNG" class="start start1">
+	<img src="start2.PNG" class="start start2">
+	<img src="start3.PNG" class="start start3">
+	<audio class="recordstart1" controls>
+        <source src="recordstart1.m4a"></source>
+	   Your browser isn't invited for super fun audio time.
+    </audio>
+	<img src="s1.PNG" class="sayangko sayangko-1">
+	<img src="s3.PNG" class="sayangko sayangko-3">
+
+	<img src="s4.PNG" class="sayangko sayangko-4">
+	<img src="s5.PNG" class="sayangko sayangko-5">
+	<img src="s6.PNG" class="sayangko sayangko-6">
+
+	<img src="s7.PNG" class="sayangko sayangko-7">
+	<img src="s8.PNG" class="sayangko sayangko-8">
+	<img src="s9.PNG" class="sayangko sayangko-9">
+
+	<img src="s10.PNG" class="sayangko sayangko-10">
+	<img src="s11.PNG" class="sayangko sayangko-11">
+	<img src="s12.PNG" class="sayangko sayangko-12">
 	
 	
 	<!-- <img src="Sayangko/4.JPG" width="100%" class="sayangko-4">
@@ -112,7 +133,8 @@
 	<img src="Sayangko/10.JPG" width="100%" class="sayangko-10"> -->
 	
  
-
+	<canvas id="canvas"></canvas>
+	<!-- <div class="petasan"></div> -->
 	<div class="container">
 		
 		<div class="row">
@@ -157,6 +179,7 @@
 				    <div class="fuego"></div>
 				    <div class="fuego"></div>
 				  </div>
+				  <!-- <embed id="cake" src="cake.svg" width="300px" height="300px" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /> -->
 				  <div class="cobertura"></div>
 				  <div class="bizcocho"></div>
 				</div>
@@ -164,7 +187,7 @@
 		</div>
 		<div class="row message">
 			<div class="col-md-12">
-				<p>Today is...</p>
+				<!-- <p>Today is...</p>
 				<p>as beautiful as other days</p>
 				<p>but you realize</p>
 				<p>another year has gone</p>
@@ -210,8 +233,54 @@
 				<p>and make it the best memory..</p>
 				<p>lastly...</p>
 				<p>I'd like to wish you one more time</p>
-				<p>a very happy birthday Xola Mathembisa</p>
+				<p>a very happy birthday Xola Mathembisa</p> -->
+				<p>Hai perempuan terbaiku🤍</p>
+				<p>Selamat hari lahir manusia baik.</p>
+				<p>ini adalah harimu</p>
+				<p>salah satu hari terbaik yang dimilikimu</p>
+				<p>dan juga hari terbaik untuku</p>
+				<p>dimana tepat 24 tahun lalu</p>
+				<p>kamu dilahirkan pada hari ini.</p>
+				<p>Sayangku🤍</p>
+				<p>beruntungnya aku bisa memilikimu</p>
+				<p>menemanimu menjalani setiap harimu.</p>
+				<p>semoga segala hal yang terbaik,</p>
+				<p>selalu menyertaimu.</p>
+				<p>Terimakasih sudah hadir di kehidupanku,</p>
+				<p>kamu berhasil berperan untuk</p>
+				<p>melengkapi kekuranganku.</p>
+				<p>mohon maaf kalo aku </p>
+				<p>sering bikin kamu bete </p> 
+				<p>bikin kamu emosi hehe 🤍🤍.</p>
+				<p>Tetap menjadi perempuan versi terbaikmu,</p>
+				<p>jaga kebahagiaanmu ya sayang.</p>
+				<p>jaga kesehatanmu juga sayang.</p>
+				<p>Semesta masih menjadi saksi, </p>
+				<p>bahwa namamu selalu tersimpan dalam doa-doaku</p>
+				<p>dan yang pasti akan selalu ada dalam hatiku.</p>
+				<p>Selamat ulang tahun sayang,</p> 
+				<p>i love you and really miss you🤍🤍🤍.</p>
+				<p>~Salman Muhammad Ichsan</p>
+				
 			</div>
+		</div>
+		<div class="row image">
+			<div class="col-md-12">
+				<img class="i1 i19" src="s1.PNG">
+				<img class="i2 i20" src="s2.PNG">
+				<img class="i3 i21" src="s3.PNG">
+				<img class="i4 i22" src="s4.PNG">
+				<img class="i5 i23" src="s5.PNG">
+				<img class="i6 i24" src="s6.PNG">
+
+				<img class="i7 i13 i27" src="s7.PNG">
+				<img class="i8 i14 i26" src="s8.PNG">
+				<img class="i9 i15" src="s9.PNG">
+
+				<img class="i10 i16 i25" src="s10.PNG">
+				<img class="i11 i17" src="s11.PNG">
+				<img class="i12 i18" src="s12.PNG">
+			</div>	
 		</div>
 		<div class="navbar navbar-fixed-bottom">
 			<div class="row">
@@ -245,6 +314,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="effect.js"></script>
+<script src="jquery.fireworks.js"></script>
+<script src="petasan.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
