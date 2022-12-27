@@ -40,7 +40,6 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
-
 		//img atas tengah				
 		$('.sayangko-1').animate({
 			top: 55,
@@ -68,7 +67,8 @@ $('document').ready(function(){
 			left: '9%',
 		},5000);
 
-
+		$('.start1,.start2,.start3').fadeOut('slow').delay(18000);
+		
 		
 
 		$(this).fadeOut('slow').delay(18000).promise().done(function(){
@@ -94,9 +94,13 @@ $('document').ready(function(){
 		$('.sayangko-2,.sayangko-9').addClass('image-rotate-behaviour-one');
 		$('.sayangko-3').addClass('image-rotate-behaviour-two');
 		
-
+		$('.start4').delay(2000).animate({
+			top: '34%',
+			left: '9%',
+		},6000);
 		
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+			$('.start4').fadeOut('slow');
 			$('#bannar_coming').fadeIn('slow');
 		});
 	});
@@ -568,19 +572,19 @@ $('document').ready(function(){
 	$('#story').click(function(){
 		$(this).fadeOut('slow');
 		$('.cake,.sayangko-2,.sayangko-3,.sayangko-4,.sayangko-5,.sayangko-6,.sayangko-7,.sayangko-8,.sayangko-9,.sayangko-10,.sayangko-11,.sayangko-12').fadeOut(3000).promise().done(function(){
-			$('.message').fadeIn('slow');
-			$('.image').fadeIn('slow');
+			$('.message').fadeIn('2000').delay(2000);
+			$('.image').fadeIn('2000').delay(2000);
 		});
 		
 		var i =1;
 		
-		function msgLoop (i=1) {
-			$("p:nth-child("+i+"),.i"+i+"").fadeOut(2000).delay(800).promise().done(function(){
+		function msgLoop (i) {
+			$("p:nth-child("+i+"),.i"+i+"").fadeOut(2000).delay(1000).promise().done(function(){
 			i=i+1;
 			$("p:nth-child("+i+"),.i"+i+"").fadeIn(2000).delay(1000);
 			console.log("#i"+i);
-			if(i==28){
-				$("p:nth-child(27),#i27").fadeOut(2000).promise().done(function () {
+			if(i==29){
+				$("p:nth-child(28),#i28").fadeOut(4000).promise().done(function () {
 					$('.cake').fadeIn(2000);
 					$('.sayangko-5').fadeIn({
 						left: '39%',
