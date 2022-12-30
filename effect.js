@@ -40,6 +40,12 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
+		$('.sayangko-0').animate({
+			top: -19,
+			left: '40%',
+			width: '100px',
+			zIndex:0,
+		},7000);
 		//img atas tengah				
 		$('.sayangko-1').animate({
 			top: 55,
@@ -48,12 +54,19 @@ $('document').ready(function(){
 			zIndex:0,
 		},7000);
 
-		var audiostart = $('.recordstart1')[0];
-		
+		$('.sayangko-0').delay(500).animate({
+			top: -100,
+			left: '40%',
+			width: '100px',
+			zIndex:0,
+		},2000);
 		$('.start1').delay(4000).animate({
 			top: '34%',
 			left: '9%',
 		},6000);
+		var audiostart = new Audio('recordstart1.mp3');
+		// audio.play();
+		// var audiostart = $('.recordstart1')[0];
 		setTimeout(function(){ 
 			audiostart.play();
 		},8000);
@@ -418,87 +431,87 @@ $('document').ready(function(){
 		$('.sayangko-2,.sayangko-3,.sayangko-4,.sayangko-5,.sayangko-6,.sayangko-7,.sayangko-8,.sayangko-9,.sayangko-10,.sayangko-11,.sayangko-12').stop();
 		$('.cake').fadeIn('slow');
 		$('.sayangko-5').animate({
-			left: '39%',
-			top: 459,
-			width: 100,
+			left: '41%',
+			top: '62%',
+			width: 70,
 			zIndex: 22,
 		},2000);
 
 		$('.sayangko-4').animate({
 			left: '-1%',
-    		top: 717,
-			width: 100,
+    		top: '88%',
+			width: 75,
 			zIndex: 0,
 			borderRadius:0
 		},6000);
 
 		$('.sayangko-2').animate({
-			left: '80%',
-    		top: 478,
-			width: 100,
+			left: '79%',
+    		top: '68%',
+			width: 75,
 			zIndex: 1,
 			borderRadius:0
 		},6000);
 
 		$('.sayangko-3').animate({
 			left: '14%',
-    		top: 585,
-			width: 90,
-			zIndex: 0,
+    		top: '74%',
+			width: 65,
+			zIndex: 1,
 			borderRadius:0
 		},6000);
 
 		$('.sayangko-6').animate({
-			left: '79%',
-    		top: 311,
-			width: 100,
+			left: '82%',
+    		top: '49%',
+			width: 75,
 			zIndex: 0,
 			borderRadius:0
 		},6000);
 
 		$('.sayangko-7').animate({
-			left: '65%',
-    		top: 350,
-			width: 100,
+			left: '66%',
+    		top: '52%',
+			width: 76,
 			zIndex: 0,
 			borderRadius:0
 		},6000);
 
 		$('.sayangko-8').animate({
-			left: '79%',
-    		top: 718,
-			width: 100,
+			left: '82%',
+    		top: '88%',
+			width: 75,
 			zIndex: 0,
 			borderRadius:0
 		},6000);
 
 		$('.sayangko-9').animate({
-			left: '39%',
-    		top: 712,
-			width: 100,
+			left: '41%',
+    		top: '85%',
+			width: 75,
 			zIndex: 0,
 		},6000);
 
 		$('.sayangko-10').animate({
-			left: '11%',
-    		top: 419,
-			width: 80,
+			left: '15%',
+    		top: '59%',
+			width: 65,
 			zIndex: 1,
 			borderRadius:0
 		},6000);
 
 		$('.sayangko-11').animate({
-			left: '-5%',
-    		top: 399,
-			width: 83,
+			left: '0%',
+    		top: '57%',
+			width: 69,
 			zIndex: 0,
 			borderRadius:0
 		},6000);
 
 		$('.sayangko-12').animate({
-			left: '19%',
-    		top: 348,
-			width: 100,
+			left: '20%',
+    		top: '51%',
+			width: 75,
 			zIndex: 0,
 			borderRadius:0
 		},6000);
@@ -571,6 +584,7 @@ $('document').ready(function(){
 	
 	$('#story').click(function(){
 		$(this).fadeOut('slow');
+		$('.balloon-border').fadeIn({top:'95%'},'slow')
 		$('.cake,.sayangko-2,.sayangko-3,.sayangko-4,.sayangko-5,.sayangko-6,.sayangko-7,.sayangko-8,.sayangko-9,.sayangko-10,.sayangko-11,.sayangko-12').fadeOut(3000).promise().done(function(){
 			$('.message').fadeIn('2000').delay(2000);
 			$('.image').fadeIn('2000').delay(2000);
@@ -587,80 +601,89 @@ $('document').ready(function(){
 				$("p:nth-child(28),#i28").fadeOut(4000).promise().done(function () {
 					$('.cake').fadeIn(2000);
 					$('.sayangko-5').fadeIn({
-						left: '39%',
-						top: 459,
-						width: 100,
+						left: '41%',
+						top: '62%',
+						width: 70,
 						zIndex: 22,
 					},2000);
 			
 					$('.sayangko-4').fadeIn({
 						left: '-1%',
-						top: 717,
-						width: 100,
+						top: '88%',
+						width: 75,
 						zIndex: 0,
+						borderRadius:0
 					},6000);
 			
 					$('.sayangko-2').fadeIn({
-						left: '80%',
-						top: 478,
-						width: 100,
-						zIndex: 0,
+						left: '79%',
+						top: '68%',
+						width: 75,
+						zIndex: 1,
+						borderRadius:0
 					},6000);
 			
 					$('.sayangko-3').fadeIn({
 						left: '14%',
-						top: 585,
-						width: 90,
-						zIndex: 0,
+						top: '74%',
+						width: 65,
+						zIndex: 1,
+						borderRadius:0
 					},6000);
 			
 					$('.sayangko-6').fadeIn({
-						left: '79%',
-						top: 311,
-						width: 100,
+						left: '82%',
+						top: '49%',
+						width: 75,
 						zIndex: 0,
+						borderRadius:0
 					},6000);
 			
 					$('.sayangko-7').fadeIn({
-						left: '65%',
-						top: 350,
-						width: 100,
+						left: '66%',
+						top: '52%',
+						width: 76,
 						zIndex: 0,
+						borderRadius:0
 					},6000);
 			
 					$('.sayangko-8').fadeIn({
-						left: '79%',
-						top: 718,
-						width: 100,
+						left: '82%',
+						top: '88%',
+						width: 75,
 						zIndex: 0,
+						borderRadius:0
 					},6000);
 			
 					$('.sayangko-9').fadeIn({
-						left: '39%',
-						top: 712,
-						width: 100,
+						left: '41%',
+						top: '85%',
+						width: 75,
 						zIndex: 0,
 					},6000);
 			
 					$('.sayangko-10').fadeIn({
-						left: '11%',
-						top: 419,
-						width: 80,
+						left: '15%',
+						top: '59%',
+						width: 65,
 						zIndex: 1,
+						borderRadius:0
 					},6000);
 			
 					$('.sayangko-11').fadeIn({
-						left: '-5%',
-						top: 399,
-						width: 83,
+						left: '0%',
+						top: '57%',
+						width: 69,
 						zIndex: 0,
+						borderRadius:0
 					},6000);
 			
 					$('.sayangko-12').fadeIn({
-						left: '19%',
-						top: 348,
-						width: 100,
+						left: '20%',
+						top: '51%',
+						width: 75,
 						zIndex: 0,
+						borderRadius:0
 					},6000);
 					
 				});

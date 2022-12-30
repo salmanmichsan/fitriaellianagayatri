@@ -12,7 +12,7 @@
 */
 
 .cake{
-  position:absolute;
+  position:fixed;
   display:none;
  top:30%; 
   left:50%;
@@ -23,12 +23,15 @@
 /* ============================================== BASE
 */
 
-.cake:after{
+.plate{
   background:rgba(255,255,255,1);
   border-radius:@D;
   content:"";
-  position:absolute;
-  bottom:0; left:0; top: 116%;
+  position: absolute;
+  /* bottom: -153px; */
+  left: 0%;
+  z-index: 999;
+  top: 375px;
   width:@D; height:@D/50;
 }
 
@@ -42,8 +45,8 @@
 .velas1{
   background: url('c2.png');
   border-radius: 100%;
-  position: absolute;
-  top: 66%;
+  position: fixed;
+  top: 58%;
   left: 40%;
   margin-left: -7.5px;
   margin-top: -25px;
@@ -56,7 +59,7 @@
 .velas1:before{
   background:url('c2.png');
   content:"";
-  position:absolute;
+  position:fixed;
   width:100%; height:@D/45;
 }
 
@@ -71,9 +74,9 @@
 .velas2{
   background: url(c4.png);
   border-radius: 100%;
-  position: absolute;
-  top: 66%;
-  left: 50%;
+  position: fixed;
+  top: 58%;
+  left: 52%;
   margin-left: -7.5px;
   margin-top: -25px;
   width: 41px;
@@ -85,7 +88,7 @@
 .velas2:before{
   background:url('c4.png');
   content:"";
-  position:absolute;
+  position:fixed;
   width:100%; height:@D/45;
 }
 
@@ -234,8 +237,8 @@
 .cobertura{
   background:rgba(236,231,227,1);
   border-radius:@D/2;
-  position:absolute;
-  top: 76%; left:50%;
+  position:fixed;
+  top: 61%; left:50%;
   margin-left:-(@D/2)/1.8;
   margin-top:-(@D/2)/10;
   width:@D/1.8; height:@D/8;
@@ -264,9 +267,9 @@
 
 .bizcocho{
   background:rgba(109,56,38,1);
-  position:absolute;
+  position:fixed;
   bottom:0; left:50%;
-  top: 82%;
+  top: 61%;
   margin-left:-(@D/2)/2;
   width:@D/2; height:@D/3;
 }

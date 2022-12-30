@@ -12,6 +12,7 @@ body {
 	display: none;
 }
 .peach {
+	height: 100%;
 	background-color: #FFDAB9;
 	
 }
@@ -19,6 +20,7 @@ body {
 canvas {
 	display: none;
 	position: fixed;
+	background-color: transparent;
 }
 .petasan{
 	width: 95%; height: 100%; position: fixed;
@@ -1502,7 +1504,7 @@ audio {
 .sayangko{
 	position: fixed;
 	top:100%;
-	left:45%;
+	left:40%;
 	/* opacity: 0.5; */
 	z-index: 1;
 	width: 100%;
@@ -1521,12 +1523,12 @@ audio {
 	margin-top: 50px;
 }
 .message {
-	margin-top: 200px;
+	margin-top: 180px;
 	display: none;
 }
 .message p {
 	font-family: 'Signika', sans-serif;
-	font-size: 30px;
+	font-size: 24px;
 	text-transform: uppercase;
 	color: #C4515C;
 	text-shadow: 2px 2px 2px #FFF;
@@ -1540,17 +1542,16 @@ audio {
 }
 
 .image img {
-	margin-top: 80px;
-    position: fixed;
+	margin-top: 10px;
+    position: relative;
     display: none;
     width: 85px;
-    position: fixed;
     top: 57%;
-    left: 36%;
+    left: 38%;
     /* opacity: 0.5; */
     z-index: 1;
     width: 100%;
-    max-width: 101px;
+    max-width: 90px;
 }
 
 .btn-primary {
